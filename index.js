@@ -12,14 +12,14 @@ function getRndInteger(min, max) {
 let counter = 0;
 
 const makeCommits = (n) => {
-  if (n === 0) return;
+  if (n === 0) return4
   counter++;
   console.log(`Commit #${counter}`);
   
   const x = random.int(0, 54);
   const y = random.int(0, 5);
   const date = moment()
-    .subtract(getRndInteger(0,4), "y")
+    .subtract(getRndInteger(0,6), "y")
     .add(1, "d")
     .add(x, "w")
     .add(y, "d")
@@ -49,5 +49,4 @@ const makeCommits = (n) => {
   });
 };
 
-makeCommits(30125);
-
+makeCommits(2900);
